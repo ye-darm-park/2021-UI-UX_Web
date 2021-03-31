@@ -1,0 +1,125 @@
+@charset "utf-8";
+body { min-width: 980px; }
+
+/*header*/
+.utilWrap { border-bottom: 1px solid #000;} 
+.util { width: 980px; 
+        margin: 0 auto; }
+.uMenu { float: right; }
+.uMenu li { float: left; 
+            padding: 0 10px; 
+            position: relative; }
+.uMenu li:last-child { padding-right: 0; }
+.uMenu li a { display: block; 
+              line-height: 35px; 
+              font-size: 12px; }
+.uMenu li:after { content: "";
+                  position: absolute; 
+                  width: 1px; 
+                  height: 10px; 
+                  background: #2f4175; 
+                  right: 0; 
+                  top: 12px; }
+.uMenu li:last-child:after { content: "";
+                             display: none; }
+
+#header h1 { text-align: center; }
+
+.gnbWrap { background: #1d5da4; }
+.gnbMenu { width: 980px; 
+           margin: 0 auto; }
+.gnbMenu li { float: left; 
+              width:calc(100% / 6); 
+              border-left: 1px solid #fff; }
+.gnbMenu li:last-child { border-right: 1px solid #fff; }
+.gnbMenu li:hover { background: #273e78; }
+.gnbMenu a { display: block; 
+             line-height: 40px; 
+             text-align: center; 
+             color: white; }
+.gnbMenu a:hover { color : pink; }
+
+/*visual wrap*/
+.visualWrap { height: 400px; 
+/*            
+              background-color: #223a6a;
+              background-image: url(../images/main_bg01.jpg); 
+              background-position: center;
+              background-repeat: no-repeat;
+*/
+              background: #223a6a url(../images/main_bg01.jpg) no-repeat center; 
+              overflow: hidden; }
+.visual { width: 980px; height: 400px; margin: 0 auto; position: relative; }
+.visual .vImg1,
+.visual .vImg2 { position: absolute; }
+.visual .vImg1 { right: 0; top: -10px; }
+.visual .vImg2 { left: 0; top: 76px; }
+
+/*section*/
+.section { background-color: #eee; }
+.banner { width: 980px;
+          margin: 0 auto; }
+.banner li { float: left; 
+             width: calc(100% / 5); 
+             padding-top: 10px; }
+.banner li a { display: block; 
+               height: 196px; 
+               text-align: center; 
+               color: #fff; }
+.banner li:nth-child(1) { background-color: #56efb7; }
+.banner li:nth-child(2) { background-color: pink; }
+.banner li:nth-child(3) { background-color: green; }
+.banner li:nth-child(4) { background-color: skyblue; }
+.banner li:nth-child(5) { background-color: #ffa55e; }
+
+/*content 1st*/
+.contentWrap1st { width: 980px; margin: 0 auto; }
+.contentWrap1st li { float: left; width: 310px; margin-right: 25px; }
+.contentWrap1st li:last-child { margin-right: 0; }
+.contentWrap1st .body { padding: 10px 20px 10px 20px; 
+                        border: 1px solid #ccc; 
+                        border-top: 0 none; }
+.contentWrap1st img { display: block; }
+
+/*content 2st*/
+.contentWrap2st { width: 980px; margin: 0 auto; }
+.contentWrap2st li { position: relative; float: left; width: 310px; margin-right: 25px; border: 1px solid #ccc; padding: 20px; overflow: hidden; }
+.contentWrap2st li:last-child { margin-right: 0; }
+.contentWrap2st img { position: absolute; right: -30px; }
+.contentWrap2st .body { width: 150px; }
+.contentWrap2st .body a { font-size: 14px; color: #4b8ce0; }
+
+/*footer*/
+#footer { background: #eee; padding-bottom: 20px; }
+.footerTopWrap { background: #ccc; }
+.footerTop { width: 980px; margin: 0 auto; }
+.footerTop ul { float: left; overflow: hidden; }
+.footerTop li { float: left; position: relative; }
+.footerTop li a { display: block; padding: 0 20px; line-height: 40px; }
+.footerTop li:first-child a { padding-left: 0; }
+.footerTop li:after { content: ""; display: block; position: absolute; width: 1px; height: 10px; background: #000; right: -1px; top: 15px; }
+.footerBottom { width: 980px; margin: 0 auto; padding: 20px 0; }
+.footerBottom h3 { float: left; margin-right: 20px; }
+.footerBottom .copy { float: left; }
+
+/*common*/
+.mb5 { margin-bottom: 5px !important; }
+.mb10 { margin-bottom: 10px !important; }
+.mb15 { margin-bottom: 15px !important; }
+.mb20 { margin-bottom: 20px !important; }
+.mb30 { margin-bottom: 30px !important; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>slider tap</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".slider").bxSlider({
+                controls:false,
+                pagerCustom:".sliderTab",
+                auto:true
+            });
+        });
+    </script>
+    <style>
+        .wrap{ width: 100%; margin: 0 auto; position: relative; }
+        .wrap .slider li img{ width: 100%; }
+        .bx-wrapper {
+                box-shadow:none;
+                border:0 none;
+        }
+        .bx-wrapper .bx-pager {
+            bottom: 30px;
+        }
+        .txtWrap {
+            position: absolute;
+            width: 400px;
+            top: 100px; right: 50px;
+        }
+        .txtWrap h2 { color: #fff; }
+        .txtWrap h2:after {
+            content:""; display: block;
+            width: 50%; height: 1px;
+            background: #fff;
+            margin: 10px 0;
+        }
+        .txtWrap p { margin-bottom: 10px;
+                     color: #fff; 
+        }
+        .btn { 
+            display: block;
+            padding: 0 20px;
+            width: 200px;
+            line-height: 40px; 
+            text-align: center;
+            border: 1px solid #fff;
+            border-radius:20px;
+            transition:0.3s      
+        }
+        .btn h3 { color: #fff; font-size: 14px; }
+        .btn:hover {
+            background: #000;
+            color: #fff;
+        }
+        .sliderTab {
+            position: absolute;
+            width: 7%;
+            height:100%;
+            background: #000;
+            left: 0; top: 0;
+        }
+        .wrap .sliderTab a {
+            display: block;
+            height: calc(100% / 3);
+            text-align: center;
+            color: #fff;
+            line-height:180px
+        }
+        .wrap .sliderTab a:hover {
+            background: #791616;
+        }
+        .wrap .sliderTab a.active {
+            background: #791616;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="slider">
+            <li>
+                <img src="images(practice)/slider2-01.jpg" alt="">
+                <div class="txtWrap">
+                    <h2>원더우먼 1987</h2>
+                    <p>1984년 모든 것이 활기찬 시대, 다이애나 프린스는 고고학자로서 인간들 사이에서 조용히 살고 있다. 단지 원더 우먼으로서 위기에 처한 사람을 구할 때만 빼고는. 그런 다이애나 앞에 거짓말처럼 죽었던 스티브 트레버가 나타나고, 거부할 수 없는 적마저 함께 찾아오는데…</p>
+                    <a href="#" class="btn"><h3>바로가기</h3></a>
+                </div> <!--.txtWrap 끝-->
+            </li> 
+            <li>
+                <img src="images(practice)/slider2-02.jpg" alt="">
+                <div class="txtWrap">
+                    <h2>저스티스 리그</h2>
+                    <p>인류의 수호자인 슈퍼맨이 사라진 틈을 노리고 ‘마더박스’를 차지하기 위해 빌런 스테픈울프가 악마군단을 이끌고 지구에 온다. 마더박스는 시간과 공간, 에너지, 중력을 통제하는 범우주적인 능력으로 행성의 파괴마저도 초래하는 물체로 이 강력한 힘을 통제하기 위해 고대부터 총 3개로 분리되어 보관되고 있던 것. 인류에 대한 믿음을 되찾고 슈퍼맨의 희생 정신에 마음이 움직인 브루스 웨인은 새로운 동료인 다이애나 프린스에게 도움을 청해 이 거대한 적에 맞서기로 한다.</p>
+                    <a href="#" class="btn"><h3>바로가기</h3></a>
+                </div> <!--.txtWrap 끝--> 
+            </li>            
+            <li>
+                <img src="images(practice)/slider2-03.jpg" alt="">
+                <div class="txtWrap">
+                    <h2>어벤져스-앤드게임</h2>
+                    <p>인피니티 워 이후 절반만 살아남은 지구, 마지막 희망이 된 어벤져스. 먼저 떠난 그들을 위해 모든 것을 걸었다!</p>
+                    <a href="#" class="btn"><h3>바로가기</h3></a>
+                </div> <!--.txtWrap 끝-->
+            </li>
+        </ul> <!--.slider 끝-->
+        <div class="sliderTab">
+            <a href="#" data-slide-index="0" active>D.C</a>
+            <a href="#" data-slide-index="1">D.C</a>
+            <a href="#" data-slide-index="2">MARVEL</a>
+        </div> <!--.sliderTab 끝-->
+</div> <!--.Wrap 끝-->
+</body>
+</html>
