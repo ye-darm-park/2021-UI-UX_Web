@@ -75,10 +75,28 @@
               class="inp-field w145">
             </div>
             <div class="field">
-              <label for="usermail" class="blind" name="uname" placeholder="이메일"
-                class="inp-field">
-
+              <label for="usermail" class="blind" name="uname" placeholder="본인확인 이메일(선택)"
+                class="inp-field w458">
                 </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>전화번호 인증</legend>
+            <div class="field confirm clearfix">
+              <label for="user-num" class="blind">인증전화번호 받기</label>
+              <select name="sern" id="user-num">
+                <option value="+82">+82</option>
+              </select>
+              <span class="field_wall">|</span>
+              <input type="text" name="usernum" placeholder="휴대전화번호"
+              class="inp-field w205">
+              <button type="button" class="btn-click">인증</button>
+            </div>
+            <div class="field confirm clearfix">
+              <label for="user-confirm" class="blind">인증번호 입력</label>
+              <input type="text" id="user-confirm" name="uconfirm"
+              placeholder="인증번호" class="inp-field w332">
+              <button type="button" class="btn-click">확인</button>
             </div>
           </fieldset>
           <div class="btn-area">
