@@ -56,3 +56,34 @@ legend, .blind { position: absolute;
   text-indent: -9999px;
   cursor: pointer;
 }
+
+.content fieldset .field.btn-radio { height: 49px; }
+.content fieldset .field .btn-label {
+  display: block;
+  width: 212px;
+  height: 31px;
+  background: #eee;
+  border: 1px solid #dcdcdc;
+  text-align: center;
+  line-height: 31px;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+}
+.content fieldset .field .btn-label.male { left: 15px; }
+.content fieldset .field .btn-label.female { right: 15px; }
+.content fieldset .field.birth label {
+  display: block;
+  width: 53px;
+  height: 49px;
+  float: left;
+  text-align: center;
+  line-height: 49px;
+  border-right: 1px solid #eee;
+}
+
+
+
+/* common */
+.w458 { width: 458px !important}
+.w130 { width: 130px !important}
