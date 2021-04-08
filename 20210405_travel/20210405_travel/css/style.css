@@ -10,41 +10,103 @@ body { margin: 0 auto;}
 .header1 {
   background-image: url(../images/header1.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-position: center;
+  background-color: #0D72A8;
+
+  height: 90px; }
+
 .header1>.top {
   width: 980px;
   margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.header1>.top>ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header1>.top>ul>li {
-  list-style: none;
-  padding-left: 50px;
-  margin-top: 10px;
-}
-.header1>.top>ul>li:first-child { padding-left: none; }
 
-.header2 { background: #f9f9f9; }
+.header1>.top>.logo {
+  float: left;
+  width: 150px;
+  height: 100px; }
+
+.header1>.top>.search {
+  position: relative;
+  float: left;
+  left: 130px;
+  top: 15px;
+}
+.header1>.top>.search>p {
+  position: absolute;
+  bottom: 3px;
+  left: 7px;
+  font-size: 11pt;
+  font-weight: bold; }
+.header1>.top>.search>.window {
+  width: 300px;
+  height: 25px;
+  border: 1px solid #eee;
+  border-radius: 30px;
+  text-align: center;
+}
+.header1>.top>.search>.glass {
+  position: absolute;
+  float: right;
+  right: 10px;
+  bottom: 1px;
+}
+
+.header1>.top>.tel_and_sns {
+  position: relative;
+  float: right;
+  display: flex;
+}
+
+.header1>.top>.tel_and_sns>h2 {
+  color: #fff;
+  font-weight: bold;
+  float: left;
+  display: flex;
+  font-size: 18pt;
+  padding-top: 10px;
+
+}
+
+.header1>.top>.tel_and_sns>.sns {
+  float: left;
+  display: flex;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+.header1>.top>.tel_and_sns>.sns>li {
+  float: left;
+  margin-right: 3px;
+}
+.header1>.top>.tel_and_sns>.sns>li:last-child
+{ margin-right: 0; }
+
+.header2 {
+  background: #f9f9f9;
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid #0D72A8;
+}
 .header2>.nav {
   width: 980px;
   margin: 0 auto;
+  position: relative;
 }
 .header2>.nav>ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  float: left;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  line-height: 58px;
 }
 
 .header2>.nav>ul>li {
+  float: left;
+  padding-right: 51px;
+  padding-left: 51px;
   list-style: none;
-  padding-right: 20px;
-  padding-left: 20px;
   border-right: 1px solid #e7e7e7;
-  flex:1
 }
 .header2>.nav>ul>li:first-child { border-left: 1px solid #e7e7e7; }
 .header2>.nav>ul>li>a {
@@ -56,8 +118,7 @@ body { margin: 0 auto;}
 /* section 부분 */
 #section {
   height: 1500px;
-  background-image: url(../images/bg.jpg);
+  background-image: url(../images/bg.png);
   background-repeat:no-repeat;
   background-size: cover;
-
 }
