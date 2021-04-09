@@ -49,16 +49,59 @@
   </header>
   <section id="section"> <!-- width: 100% -->
     <div class="section1"> <!-- width: 980px -->
-      <div class="inf_and_pics">
-        <div class="inf">
-          <ul class="clearfix">
-            <li><a href="#"><img src="" alt="공항예약">공항예약</a></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+      <div class="form_and_pics">
+        <div class="formWrap">
+          <form>
+            <fieldset>
+              <legend>여행일정</legend>
+              <ul>
+                <li>
+                  <label for="golo">가고 싶은 나라를 선택하세요.</label>
+                  <select name="golo" id="golo">
+                    <option value="">선택하세요</option>
+                    <option value="미국">미국</option>
+                    <option value="일본">일본</option>
+                    <option value="중국">중국</option>
+                  </select>
+                </li>
+                <li class="clearfix">
+                  <div class="left">
+                    <label for="sdate">출발일</label>
+                    <input type="date" id="sdate">
+                  </div>
+                  <div class="right">
+                    <label for="edate">도착일</label>
+                    <input type="date" id="edate">
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="left">
+                    <label for="cgrade">좌석등급</label>
+                    <select class="cgrade" id="cgrade">
+                      <option value="비지니스">비지니스</option>
+                      <option value="이코노미">이코노미</option>
+                    </select>
+                  </div>
+                  <div class="right">
+                    <label for="num">성인</label>
+                    <input type="number" id="num" placeholder="1">
+                  </div>
+                  <div class="right">
+                    <label for="num">아이</label>
+                    <input type="number" id="num" placeholder="1">
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
         </div>
-        <ul class="pics">
+
+
+
+
+
+      </div>
+      <ul class="pics">
           <li><a href="#"><img src="images/france.jpg" alt="프랑스"></a></li>
           <li><a href="#"><img src="images/japen.jpg" alt="일본"></a></li>
         </ul>
