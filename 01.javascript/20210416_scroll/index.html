@@ -36,7 +36,7 @@
   <div class="view">
     <p>scroll:<span class="scrollView">0</span></p>
   </div>
-  <script>
+  <!-- <script>
     const scrollY = document.querySelector(".scrollView");
     const boxPos = document.querySelectorAll(".box");
 
@@ -46,13 +46,27 @@
       scrollY.innerHTML = scrollYPosition;
 
       for(let i=0; i<boxPos.length; i++){
-        if(boxPos[i].offsetTop<scrollYPosition + window.innerHeight/2){
-          boxPos[i].classList.add("boxView");
-        }else{
-          boxPos[i].classList.remove("boxView");
-        }
+        if(boxPos[i].offsetTop<scrollYPosition + window.innerHeight/2)
+        {boxPos[i].classList.add("boxView");}
+        else{boxPos[i].classList.remove("boxView");}
       }
+    });
+  </script> -->
 
+  <script>
+    const scrollY = document.querySelector(."scrollView");
+    const boxPos = document.querySelectorAll(."box");
+
+    window.oddEventListner("scroll", function(){
+      console.log(window.pageYOffset);
+      const scrollYPosition = window.pageYOffset;
+      scrollY.innerHTML = scrollYPosition;
+
+      for(let i=0; i<boxPos.length; i++){
+        if(boxPos[i].offsetTop<scrollYPosition + window.innerHeight/2)
+        {boxPos[i].classList.add("boxView");}
+        else{boxPos[i].classList.remove("boxView");}
+      }
     });
   </script>
 </body>
