@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jquery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="../../js/jquery-3.1.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      console.log( $("p").eq(1).css("background","skyblue") );
+      $("p").eq(2).css("color","red");
+      document.getElementsByTagName("p")[3].style.color="blue"
+    });
+  </script>
+</head>
+<body>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit. Molestias dolorum doloremque minus veniam
+    adipisci quisquam repudiandae architecto facere nobis
+    id saepe numquam, alias fugiat aut nostrum dolores
+    eveniet officia error!</p>
+  <p>Amet quasi enim, atque quod iusto totam veniam
+    cumque, blanditiis, fugiat dolore officiis aperiam
+    dolores, cupiditate sit. Ut quam assumenda explicabo
+    error in obcaecati neque, atque accusamus blanditiis
+    saepe non!</p>
+  <p>Voluptate illo maiores, tenetur iure dolorem quae
+    veniam tempora. Similique sunt quidem neque officiis
+    in quos itaque modi nesciunt alias minima ullam
+    optio deserunt provident placeat laboriosam numquam,
+    cum velit.</p>
+  <p>Deleniti a, sapiente reiciendis nemo, adipisci
+    alias iure sequi culpa id porro fuga molestiae
+    accusamus, incidunt accusantium, aliquam hic
+    praesentium inventore corporis in dolor cum! Neque
+    illo quo veniam, nulla.</p>
+  <p>Optio consequuntur deserunt iusto necessitatibus
+    fuga nostrum dignissimos velit non at error
+    laudantium mollitia aliquid cum libero, corrupti
+    iure earum. Nihil saepe ratione eaque magnam rem
+    quam amet fugiat placeat!</p>
+
+  <ul class="tab">
+    <li>menu1</li>
+    <li>menu2</li>
+    <li>menu3</li>
+    <li>menu4</li>
+    <li>menu5</li>
+  </ul>
+  <div class="boxWrap">
+    <div class="box1">1. Lorem ipsum dolor sit amet,</div>
+    <div class="box2">2. Lorem ipsum dolor sit amet,</div>
+    <div class="box3">3. Lorem ipsum dolor sit amet,</div>
+    <div class="box4">4. Lorem ipsum dolor sit amet,</div>
+    <div class="box5">5. Lorem ipsum dolor sit amet,</div>
+  </div>
+  <script>
+    // $(".tab>li").on("click",function(){})
+    // $(".boxWrap>div").hide();
+    // $(".boxWrap>div").eq(0).show();
+
+    $(".boxWrap>div").hide().eq(0).show();
+
+    $(".tab>li").click(function(){
+      // $(".tab>li").eq(0).css("background","pink");
+      $(".tab>li").css("background","white");
+      $(this).css("background","pink");
+      console.log($(this).index());
+
+      $(".boxWrap>div").hide().eq($(this).index()).show();;
+
+
+    });
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <title>jquery(practice)</title>
+  <style>
+    ul.tab{ width: 1000px; margin: 0 auto; }
+    ul.tab li { float: left; width: calc(1000px / 5); }
+    ul.tab li:first-child { background: pink; }
+    .boxWrap {width: 1000px; margin: 0 auto;
+      background: skyblue; }
+    .boxWrap div { padding: 20px; display: none; }
+    .boxWrap div:nth-child(1) { display: block; }
+
+  </style>
+</head>
+<body>
+  <ul class="tab clearfix">
+    <li>menu1</li>
+    <li>menu2</li>
+    <li>menu3</li>
+    <li>menu4</li>
+    <li>menu5</li>
+  </ul>
+  <div class="boxWrap">
+    <div class="box1">
+      1. Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Odio, omnis
+      quibusdam dolorem sequi dicta error quo
+      praesentium ex corrupti, itaque, quaerat?
+      Magnam ipsa, fuga voluptatem at voluptatibus!
+      Distinctio, hic, eum.</div>
+    <div class="box2">
+      2. Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Odio, omnis
+      quibusdam dolorem sequi dicta error quo
+      praesentium ex corrupti, itaque, quaerat?
+      Magnam ipsa, fuga voluptatem at voluptatibus!
+      Distinctio, hic, eum.
+    </div>
+    <div class="box3">
+      3. Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Odio, omnis
+      quibusdam dolorem sequi dicta error quo
+      praesentium ex corrupti, itaque, quaerat?
+      Magnam ipsa, fuga voluptatem at voluptatibus!
+      Distinctio, hic, eum.
+    </div>
+    <div class="box4">
+      4. Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Odio, omnis
+      quibusdam dolorem sequi dicta error quo
+      praesentium ex corrupti, itaque, quaerat?
+      Magnam ipsa, fuga voluptatem at voluptatibus!
+      Distinctio, hic, eum.
+    </div>
+    <div class="box5">
+      5. Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Odio, omnis
+      quibusdam dolorem sequi dicta error quo
+      praesentium ex corrupti, itaque, quaerat?
+      Magnam ipsa, fuga voluptatem at voluptatibus!
+      Distinctio, hic, eum.
+    </div>
+  </div>
+  <script src="../../js/jquery-3.1.1.min.js"></script>
+  <script>
+    //$(".boxWrap div").hide().eq(0).show();
+    //$(".tab>li").eq(0).css("background","pink");
+
+    $(".tab>li").click(function(){
+      $(".tab>li").css("background","initial");
+      $(this).css("background","pink");
+      let t = $(this).index();
+      $(".boxWrap div").hide().eq(t).show();
+    });
+  </script>
+</body>
+</html>
