@@ -49,6 +49,13 @@ $(window).scroll(function(){
   if(scrollY >= $(".scene").eq(2).offset().top){
     $(".menu>a").removeClass("active").eq(2).addClass("active");
   }
+
+  for문
+  for(let i=0; i<(".menu>a").lengh; i++){
+    $(".menu>a")eq(i).click(function(){
+       $("html,body").animate({scrollTop:$(".scene").eq(i).offset().top})
+     });
+  }
 });
 
 
