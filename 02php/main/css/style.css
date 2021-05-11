@@ -1,0 +1,12 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a:link,a:visited{color: #000; text-decoration: none;}
+.clearfix:after{content:""; clear: both; display: block;}
+
+
+#header {width: 960px; margin: 0 auto;}
+#header h1 {text-align: center;}
+.gnb {}
+.gnb li {float: left; width: calc(100% / 5);}
+.gnb li a {display: block; text-align: center; line-height: 40px;}  
