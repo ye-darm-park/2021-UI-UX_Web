@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="(명작,i) in product">
+                <a v-bind:href="link[i]">{{product[i]}}</a>
+            </li>
+
+            
+            
+        </ul>
+    </div>
+    <script>
+        // document.getElementById("app").innerHTML = "박예닮";
+        // $("#app").html("박예닮");
+        new Vue({
+            el:'#app',
+            data:{
+                message:'박예닮',
+                product: ['자전거','스쿠터','아동용','성인용','주니어용','이벤트'],
+                link:['#1','#2','#3','#4','#5','#6'],
+                myclass:'testhan'
+            }
+        })
+    </script>
+</body>
+</html>
